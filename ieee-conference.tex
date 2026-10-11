@@ -1,0 +1,113 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else
+  \usepackage{fontspec}
+\fi
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}%
+  \setlength{\parskip}{0pt}%
+}
+
+% Support for bibliographies rendered by Pandoc citeproc.
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2]
+{%
+  \begin{list}{}{%
+    \setlength{\itemindent}{0pt}%
+    \setlength{\leftmargin}{0pt}%
+    \setlength{\parsep}{0pt}%
+    \ifodd #1
+      \setlength{\leftmargin}{\cslhangindent}%
+      \setlength{\itemindent}{-\cslhangindent}%
+    \fi
+    \setlength{\itemsep}{#2\baselineskip}%
+  }%
+}
+{\end{list}}
+\newcommand{\CSLBlock}[1]{\hfill\break\strut #1\strut}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut #1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth-\csllabelwidth}{\strut #1\strut}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\providecommand{\CSLAnd}{and}
+\NewDocumentCommand{\citeproctext}{}{}
+\NewDocumentCommand{\citeproc}{mm}{\hyperlink{#1}{#2}}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+% Nova fila no bloco de autores IEEEtran
+\makeatletter
+\newcommand{\linebreakand}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill
+  \begin{@IEEEauthorhalign}
+}
+\makeatother
+
+\title{$title$}
+
+$if(author)$
+\author{%
+$for(author)$
+$if(author.new-row)$
+  \linebreakand
+$endif$
+  \IEEEauthorblockN{$author.name$}
+  \IEEEauthorblockA{%
+$if(author.program)$
+    $author.program$\\
+$endif$
+$if(author.institution)$
+    $author.institution$\\
+$endif$
+$if(author.location)$
+    $author.location$
+$endif$
+$if(author.email)$
+    \\\texttt{$author.email$}
+$endif$
+  }
+$sep$
+  \and
+$endfor$
+}
+$endif$
+
+\begin{document}
+\maketitle
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$if(keywords)$
+\begin{IEEEkeywords}
+$for(keywords)$$keywords$$sep$, $endfor$
+\end{IEEEkeywords}
+$endif$
+
+$body$
+
+\end{document}
