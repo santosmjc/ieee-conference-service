@@ -1,36 +1,16 @@
 ---
 title: "Preparation of a Formatted Conference Paper for an IEEE Power & Energy Society Conference"
 author:
-  - name: "Fábio Oliveira"
-    program: "Master's in Cybersecurity"
-    institution: "University of Aveiro"
-    location: "Aveiro, Portugal"
-    email: "fabio.oliveira@ua.pt"
+  - "Fábio Oliveira"
+  - "Ivan Horoshko"
+  - "Lucas S."
+  - "Márcio Santos"
+  - "Ricardo Duarte"
 
-  - name: "Ivan Horoshko"
-    program: "Master's in Cybersecurity"
-    institution: "University of Aveiro"
-    location: "Aveiro, Portugal"
-    email: "ivan.horoshko@ua.pt"
-
-  - name: "Lucas S."
-    program: "Master's in Cybersecurity"
-    institution: "University of Aveiro"
-    location: "Aveiro, Portugal"
-    email: "lucas.s@ua.pt"
-
-  - name: "Márcio Santos"
-    new-row: true
-    program: "Master's in Cybersecurity"
-    institution: "University of Aveiro"
-    location: "Aveiro, Portugal"
-    email: "marcio.santos@ua.pt"
-
-  - name: "Ricardo Duarte"
-    program: "Master's in Cybersecurity"
-    institution: "University of Aveiro"
-    location: "Aveiro, Portugal"
-    email: "ricardo.duarte@ua.pt"
+affiliation:
+  - "Master's Degree in Cybersecurity"
+  - "University of Aveiro"
+  - "Aveiro, Portugal"
 date: ""
 lang: en-US
 documentclass: IEEEtran
@@ -62,6 +42,40 @@ affiliation:
   - "University of Aveiro"
   - "Aveiro, Portugal"
 
+-----------
+
+author:
+  - name: "Fábio Oliveira"
+    program: "Master's in Cybersecurity"
+    institution: "University of Aveiro"
+    location: "Aveiro, Portugal"
+    email: "fabio.oliveira@ua.pt"
+
+  - name: "Ivan Horoshko"
+    program: "Master's in Cybersecurity"
+    institution: "University of Aveiro"
+    location: "Aveiro, Portugal"
+    email: "ivan.horoshko@ua.pt"
+
+  - name: "Lucas S."
+    program: "Master's in Cybersecurity"
+    institution: "University of Aveiro"
+    location: "Aveiro, Portugal"
+    email: "lucas.s@ua.pt"
+
+  - name: "Márcio Santos"
+    new-row: true
+    program: "Master's in Cybersecurity"
+    institution: "University of Aveiro"
+    location: "Aveiro, Portugal"
+    email: "marcio.santos@ua.pt"
+
+  - name: "Ricardo Duarte"
+    program: "Master's in Cybersecurity"
+    institution: "University of Aveiro"
+    location: "Aveiro, Portugal"
+    email: "ricardo.duarte@ua.pt"
+-----------
 Converted from the text supplied by the user. This is the instructional
 IEEE PES template, not a research article about the Fleet Manager.
 

@@ -68,6 +68,17 @@ $endfor$
 
 $if(author)$
 \author{%
+$if(affiliation)$
+  % Autores com afiliação comum.
+  \IEEEauthorblockN{%
+$for(author)$
+$if(author.name)$$author.name$$else$$author$$endif$$sep$, $endfor$
+  }
+  \IEEEauthorblockA{%
+$for(affiliation)$$affiliation$$sep$\\$endfor$
+  }
+$else$
+  % Autores com afiliações individuais.
 $for(author)$
 $if(author.new-row)$
   \linebreakand
@@ -90,6 +101,7 @@ $endif$
 $sep$
   \and
 $endfor$
+$endif$
 }
 $endif$
 
